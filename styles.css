@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+        background: #c1bdc4;
+}
+
+header, .menu, .title, .lista-productos ul, .card-producto, .botones-compra{
+    display: flex;
+    
+}
+
+a{
+      color:rgb(57, 56, 56);
+}
+
+header{
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+
+    color: rgb(211, 209, 209);
+}
+
+.menu{
+    height: 10vh;
+    gap:20px;
+    justify-content: center;
+    align-items: end;
+    font-size: 1.7rem;
+
+
+}
+
+.menu li a:hover{
+    color: #5a1284;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.submenu-container {
+    position: relative;
+}
+
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: none; 
+    z-index: 10;
+    min-width: 150px;
+}
+
+.submenu li {
+    padding: 10px;
+}
+
+.submenu li a {
+    color: black;
+}
+
+
+.submenu-container.active .submenu {
+    display: block;
+}
+
+
+
+.logo-container img{
+    height: 25vh;
+}
+
+.inicio{
+    height: 50vh;
+}
+
+.title{
+    background-color: #5a1284;
+    height: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1{
+    font-size: 6rem;
+    color: rgb(211, 209, 209);
+    margin-bottom: 20px;
+}
+
+.title p {
+    font-size: 2rem;
+    color: rgb(211, 209, 209);
+}
+
+
+
+svg {
+    display: block; 
+    width: 100%;
+    height: 100%;
+}
+
+.productos{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+   
+}
+
+.lista-productos{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.lista-productos h2{
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    border-bottom: 1px solid rgba(210, 208, 210, 0.7);
+}
+.lista-productos ul {
+    gap:20px;
+    padding-top:30px;
+    justify-content: center;
+}
+.lista-productos ul li {
+    display: flex;
+}
+
+
+
+ .card-producto{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px 3px rgba(22, 21, 22, 0.7);
+    border-radius: 20px;
+    padding:20px;
+ }
+
+ .card-producto h3 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+ .card-producto img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+ }
+
+ .card-producto p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+ .botones-compra{
+    height: 50px;
+    width:60%;
+    justify-content: space-around;
+ }
+
+ .botones-compra button{
+    width:40%;
+    border-radius: 10px;
+    background-color:#cecccf;
+      font-size: 1rem;
+ }
+
+
+ #contacto {
+  background: linear-gradient(135deg, #5a1284, #8b32c9);
+  color: #fff;
+  padding: 60px 20px;
+  border-radius: 12px;
+  text-align: center;
+
+}
+
+#contacto h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#contacto p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+#contacto h3{
+    font-size: 2em;
+    margin-top: 100px;
+}
+
+#contacto li {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+#contacto a {
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#contacto a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+#contacto .redes a {
+  display: inline-block;
+  margin: 5px 10px;
+}
