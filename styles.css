@@ -11,7 +11,7 @@ body{
         background: #c1bdc4;
 }
 
-header, .menu, .title, .lista-productos ul, .card-producto, .botones-compra{
+header, .menu, .title, .lista-productos ul, .card-producto, .botones-compra, #nosotros{
     display: flex;
     
 }
@@ -157,13 +157,13 @@ svg {
  }
 
  .card-producto h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
  .card-producto img{
-    width: 400px;
-    height: 400px;
+    width: 150px;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
     margin-right: 20px;
@@ -176,7 +176,7 @@ svg {
 
  .botones-compra{
     height: 50px;
-    width:60%;
+    width:80%;
     justify-content: space-around;
  }
 
@@ -187,6 +187,24 @@ svg {
       font-size: 1rem;
  }
 
+ #nosotros {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    padding:10px;
+ }
+
+ #nosotros h2{
+    font-size: 2rem;
+ }
+
+ #nosotros p {
+    font-size: 1.2rem;
+    padding:5px;
+    width: 90%;
+    text-align: center;
+ }
 
  #contacto {
   background: linear-gradient(135deg, #5a1284, #8b32c9);
